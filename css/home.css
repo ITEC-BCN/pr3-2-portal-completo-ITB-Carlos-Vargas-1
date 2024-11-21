@@ -1,0 +1,46 @@
+#grid-contenedor{
+    display: grid;
+    grid-template-areas: 
+       'head head head head head head head head head'
+       'p p p p p p p p p'
+       'ac ac ac ac ac ac ac ac ac'
+       'side se se se se se se se se'
+       'fo fo fo fo fo fo fo fo fo';
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       height: 100vb;
+}
+.header{
+    background-color: crimson;
+    grid-area: head;
+   }
+   .side-var{
+    background-color: cornflowerblue;
+    grid-area: side;
+   }
+   .content{
+    background-color: gray;
+    grid-area: content;
+   }
+   .pelis{
+    background-color: aqua;
+    grid-area: p;
+   }
+   .actor{
+    background-color: blue;
+    grid-area: ac;
+   }
+   .series{
+    background-color: bisque;
+    grid-area: se;
+   }
+   .footer{
+    background-color: deeppink;
+    grid-area: fo;
+   }
+   
+   .grid-item{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight:bold;
+   }
