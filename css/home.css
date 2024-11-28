@@ -1,56 +1,79 @@
-  .header{
-    background-color: rgb(243, 23, 67);
-    grid-column:col / span 9;
-   
-   }
-   .side-var{
-    background-color: cornflowerblue;
-    grid-column:col / span 1;
-   }
-   .content{
-    background-color: gray;
-    grid-column:col / span 9;
-   }
-   .pelis{
-    background-color: aqua;
-    grid-column:col / span 9;
-   }
-   .pelis header{
-    background-color: rgb(124, 124, 194);
-   }
-   .pelis article{
-    background-color: brown;
-   }
-   .actor{
-    background-color: blue;
-    grid-column:col / span 9;
-   }
-   .series{
-    background-color: bisque;
-    grid-column:col 2/ span 8;
-   }
-   .vistos{
-    background-color: deeppink;
-    grid-column:col / span 9;
-    grid-row:auto;
-   }
-   .footer{
-    background-color: deeppink;
-    grid-column:col / span 9;
-    grid-row:auto;
-   }
-   
-   .grid-item{
-     display: flex;
-     padding: 5px;
-     flex-direction: column;
-   
+.grid-contenedor{
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: repeat(9,  1fr);
+background-color: aqua; 
+margin: 0;
+}
+.header{
+background-color: rgb(243, 23, 67); 
+grid-column:col / span 9;
+}
 
-   }
-   .grid-contenedor{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(9,  1fr);
-    background-color: aqua;
-       margin: 0;
+/*modificacion del apartado peliculas*/
+.pelis{
+background-color: aqua;
+grid-column:col / span 9;
+}
+.pelis header{
+background-color: rgb(124, 124, 194);
+}
+.pelis article{
+background-color: brown;
+}
+.listado_pelis{
+  display: grid;
+grid-template-rows: auto;
+grid-template-columns: repeat(6,  1fr);
+margin: 10px;
+grid-gap: 10px;
+}
+/*modificacion del apartado actores*/
+.actor{
+background-color: blue;
+grid-column:col / span 9;
+}
+.actor header{
+  text-align: center;
+}
+.listado_actores{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8,  1fr);
+}
+/*modificacion del apartado festivales*/
+.side-var{
+  background-color: cornflowerblue;
+  grid-column:col / span 1;
+  }
+.listado_festivales{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1,  1fr;
+}
+
+/*modificacion del apartado series*/
+.series{
+background-color: bisque;
+grid-column:col 2/ span 8;
+}
+.listado_series{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4,  1fr);
+}
+/*modificacion del apartado vistos*/
+.vistos{
+background-color: deeppink;
+grid-column:col / span 9;
+grid-row:auto;
+}
+.footer{
+background-color: deeppink;
+grid-column:col / span 9;
+grid-row:auto;
+}
+.grid-item{
+display: flex;
+flex-direction: column;
 }
