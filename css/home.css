@@ -1,67 +1,56 @@
   .header{
-    background-color: crimson;
-    grid-area: head;
+    background-color: rgb(243, 23, 67);
+    grid-column:col / span 9;
    
    }
    .side-var{
     background-color: cornflowerblue;
-    grid-area: side;
+    grid-column:col / span 1;
    }
    .content{
     background-color: gray;
-    grid-area: content;
+    grid-column:col / span 9;
    }
    .pelis{
     background-color: aqua;
-    grid-area: pelis;
-    display: grid;
-    grid-gap: 5px;
-   
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-    
+    grid-column:col / span 9;
    }
-   .titulo{
-    background-color: rgb(181, 190, 176);
-    grid-column: 1/3;
-    grid-row: 1;
+   .pelis header{
+    background-color: rgb(124, 124, 194);
    }
-   .pelicula1{
-    background-color: rgb(36, 94, 6);
-    grid-column: 1;
-    grid-row: 2;
-   }
-   .pelicula2{
-    background-color: rgb(36, 94, 6);
-    grid-column: 2;
-    grid-row: 2;
+   .pelis article{
+    background-color: brown;
    }
    .actor{
     background-color: blue;
-    grid-area: actor;
+    grid-column:col / span 9;
    }
    .series{
     background-color: bisque;
-    grid-area: serie;
+    grid-column:col 2/ span 8;
+   }
+   .vistos{
+    background-color: deeppink;
+    grid-column:col / span 9;
+    grid-row:auto;
    }
    .footer{
     background-color: deeppink;
-    grid-area: foot;
+    grid-column:col / span 9;
+    grid-row:auto;
    }
    
    .grid-item{
      display: flex;
+     padding: 5px;
+     flex-direction: column;
+   
 
    }
    .grid-contenedor{
     display: grid;
-    grid-template-areas: 
-       'head head head head head head head head head'
-       'pelis pelis pelis pelis pelis pelis pelis pelis pelis'
-       'actor actor actor actor actor actor actor actor actor'
-       'side serie serie serie serie serie serie serie serie'
-       'foot foot foot foot foot foot foot foot foot';
-       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-       
+    grid-template-rows: auto;
+    grid-template-columns: repeat(9,  1fr);
+    background-color: aqua;
        margin: 0;
 }
