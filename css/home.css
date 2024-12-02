@@ -68,8 +68,13 @@ background-color: deeppink;
 grid-column:col / span 9;
 grid-row:auto;
 }
+.listado_vistos{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(9,  1fr);
+}
 .footer{
-background-color: deeppink;
+background-color: rgb(88, 4, 49);
 grid-column:col / span 9;
 grid-row:auto;
 }
