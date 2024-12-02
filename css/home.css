@@ -6,10 +6,42 @@ background-color: aqua;
 margin: 0;
 }
 .header{
-background-color: rgb(243, 23, 67); 
+background-color: rgb(8,15,40); 
 grid-column:col / span 9;
+align-items: center;
 }
-
+.logo{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.navegacion{
+  display: grid;
+grid-template-rows: auto;
+grid-template-columns: repeat(3,  1fr);
+margin: 10px;
+grid-gap: 100px;
+}
+.navegacion a:link{
+  text-decoration: none;
+  color: white;
+  padding: 2px 1px 0;
+}
+.navegacion a:visited{
+  
+  color: rgb(17, 17, 185);
+}
+.navegacion a:focus{
+  border-bottom: 1px solid;
+  background: rgb(17, 17, 119);
+}
+.navegacion a:hover{
+  border-bottom: 1px solid;
+  background: rgb(30,39,71);
+}
+.navegacion a:active{
+  border-bottom: 1px solid;
+  background: rgb(30,39,71);
+}
 /*modificacion del apartado peliculas*/
 .pelis{
 background-color: aqua;
