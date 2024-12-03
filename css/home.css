@@ -1,7 +1,7 @@
 .grid-contenedor{
 display: grid;
 grid-template-rows: auto;
-grid-template-columns: repeat(9,  1fr);
+grid-template-columns: repeat(1,  1fr);
 background-color: aqua; 
 margin: 0;
 }
@@ -15,9 +15,6 @@ align-items: center;
   margin-bottom: 20px;
 }
 .navegacion{
-  display: grid;
-grid-template-rows: auto;
-grid-template-columns: repeat(3,  1fr);
 margin: 10px;
 grid-gap: 100px;
 }
@@ -50,22 +47,34 @@ grid-column:col / span 9;
 .pelis header{
 background-color: rgb(8,15,40);
 color: white;
+
 }
 .pelis article{
-background-color: brown;
-justify-items: center;
-}
-.pelis img{
-  
-  height: 290px;
-  width: 193px;
+  background-color: rgb(8,15,40);
 }
 .listado_pelis{
-  display: grid;
-grid-template-rows: auto;
-grid-template-columns: repeat(6,  1fr);
-margin: 10px;
-grid-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.listado_pelis img{
+  height: 290px;
+  width: 193px;
+  padding-left: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  
+  
+}
+.listado_pelis h3{
+  text-align: center;
+  color: white;
+  background-color: rgb(32, 49, 114); 
+  margin: 12px;
+  margin-top: 0px;
+}
+.listado_pelis p, h4{
+  color: white;
 }
 /*modificacion del apartado actores*/
 .actor{
@@ -76,7 +85,7 @@ grid-column:col / span 9;
   text-align: center;
 }
 .listado_actores{
-  display: grid;
+  display: flex;
   grid-template-rows: auto;
   grid-template-columns: repeat(8,  1fr);
 }
@@ -97,7 +106,7 @@ background-color: bisque;
 grid-column:col 2/ span 8;
 }
 .listado_series{
-  display: grid;
+  display: flex;
   grid-template-rows: auto;
   grid-template-columns: repeat(4,  1fr);
 }
@@ -108,7 +117,7 @@ grid-column:col / span 9;
 grid-row:auto;
 }
 .listado_vistos{
-  display: grid;
+  display: flex;
   grid-template-rows: auto;
   grid-template-columns: repeat(9,  1fr);
 }
@@ -121,4 +130,8 @@ grid-row:auto;
 display: flex;
 flex-direction: column;
 }
+.grid-item_fila{
+  display: flex;
+  flex-direction:row;
+  }
 /*hola*/
