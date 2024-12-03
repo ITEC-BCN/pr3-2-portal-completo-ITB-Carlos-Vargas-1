@@ -6,7 +6,7 @@ background-color: aqua;
 margin: 0;
 }
 .header{
-background-color: rgb(8,15,40); 
+background-color: rgb(20,26,49); 
 grid-column:col / span 9;
 align-items: center;
 }
@@ -44,14 +44,21 @@ grid-gap: 100px;
 }
 /*modificacion del apartado peliculas*/
 .pelis{
-background-color: aqua;
+background-color: rgb(8,15,40);
 grid-column:col / span 9;
 }
 .pelis header{
-background-color: rgb(124, 124, 194);
+background-color: rgb(8,15,40);
+color: white;
 }
 .pelis article{
 background-color: brown;
+justify-items: center;
+}
+.pelis img{
+  
+  height: 290px;
+  width: 193px;
 }
 .listado_pelis{
   display: grid;
