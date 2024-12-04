@@ -1,0 +1,141 @@
+
+.contenido{
+  margin: 0;
+}
+.grid-contenedor{
+margin: 0;
+}
+.header{
+background-color: rgb(20,26,49); 
+grid-column:col / span 9;
+align-items: center;
+
+
+}
+.logo{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.navegacion{
+margin: 10px;
+grid-gap: 100px;
+}
+.navegacion a:link{
+  text-decoration: none;
+  color: white;
+  padding: 2px 1px 0;
+}
+.navegacion a:visited{
+  
+  color: rgb(17, 17, 185);
+}
+.navegacion a:focus{
+  border-bottom: 1px solid;
+  background: rgb(17, 17, 119);
+}
+.navegacion a:hover{
+  border-bottom: 1px solid;
+  background: rgb(30,39,71);
+}
+.navegacion a:active{
+  border-bottom: 1px solid;
+  background: rgb(30,39,71);
+}
+/*modificacion del apartado peliculas*/
+.pelis{
+background-color: rgb(8,15,40);
+
+}
+.pelis header{
+background-color: rgb(8,15,40);
+color: white;
+
+}
+/*
+.pelis article{
+  background-color: rgb(8,15,40);
+}*/
+.listado_pelis{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid red;
+}
+.listado_pelis img{
+  height: 290px;
+  width: 193px;
+  padding-left: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  
+  
+  
+}
+.listado_pelis h3{
+  text-align: center;
+  color: white;
+  background-color: rgb(32, 49, 114); 
+  margin: 12px;
+  margin-top: 0px;
+}
+.listado_pelis p, h4{
+  color: white;
+}
+/*modificacion del apartado actores*/
+.actor{
+background-color: blue;
+grid-column:col / span 9;
+}
+.actor header{
+  text-align: center;
+}
+.listado_actores{
+  display: flex;
+  flex-direction: row;
+}
+/*modificacion del apartado festivales*/
+.side-var{
+  background-color: cornflowerblue;
+  grid-column:col / span 1;
+  }
+.listado_festivales{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/*modificacion del apartado series*/
+.series{
+background-color: bisque;
+grid-column:col 2/ span 8;
+}
+.listado_series{
+  display: flex;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4,  1fr);
+}
+/*modificacion del apartado vistos*/
+.vistos{
+background-color: deeppink;
+grid-column:col / span 9;
+grid-row:auto;
+}
+.listado_vistos{
+  display: flex;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(9,  1fr);
+}
+.footer{
+background-color: rgb(88, 4, 49);
+grid-column:col / span 9;
+grid-row:auto;
+}
+.grid-item{
+display: flex;
+flex-direction: column;
+}
+.grid-item_fila{
+  display: flex;
+  flex-direction:row;
+  }
+/*hola*/
