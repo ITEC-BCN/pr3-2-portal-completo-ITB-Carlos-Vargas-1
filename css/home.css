@@ -1,0 +1,121 @@
+.contenedor{
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+.Header{
+  max-width: 100%;
+}
+.cont{
+  background-color:  rgb(20,26,49);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.logo{
+  width: 100px;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+}
+.menu li{
+  list-style: none;
+}
+.menu a{
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+.menu a:hover{
+  background-color: white;
+  color:  rgb(17, 17, 119);
+  border-radius:10px;
+}
+.menu a:visited{
+  text-decoration:underline white;
+}
+/*Elementos del main*/
+.pelis{
+  background-color:  rgb(8,15,40);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: center;
+
+}
+.pelis header{
+  margin: 15px;
+  color: white;
+}
+.listado_pelis{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 0;
+}
+.peli-item{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+.peli-item img{
+  width: 100%; 
+  height: auto; 
+  display: block;
+}
+.peli-item h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  background-color:rgb(29, 35, 59);
+  padding: 3px;
+}
+.peli-item p{
+  font-size: small;
+  color: white;
+  text-align:left;
+  margin: 0;
+}
+.categorias{
+  padding: 0;
+  display: flex;
+  background-color: rgb(0, 62, 100);
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style:none;
+}
+/*actores*/
+.actores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(18, 18, 82);
+}
+
+.lita-actores{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.lita-actores p,h1{
+  color: white;
+}
+
+
+.lita-actores img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+.lita-actores article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
