@@ -1,10 +1,16 @@
+*{
+  color: white;
+}
 .contenedor{
   display: flex;
   margin: 0;
   flex-direction: column;
 }
 .Header{
-  max-width: 100%;
+ 
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
 }
 .cont{
   background-color:  rgb(20,26,49);
@@ -118,51 +124,126 @@
 /*sectio lateral*/
 .contain-side{
   display: flex;
-  border: solid red;
+  background-color: rgb(8,15,40);
 }
 .series{
   flex-grow: 1;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  border: solid blue;
 }
 
 .festivales{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid black;
+  background-color: rgb(7, 79, 100);
 }
 /*festivales*/
 .lista-festi{
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
   margin: 10px;
 }
 .lista-festi h1{
   font-size: large;
+  
 }
 .lista-festi img{
   width: 250px;
+  display: block;
+}
+.lista-festi ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.lista-festi p{
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 /*series*/
 .lista-series{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
+ 
   
 }
-
 .serie{
   background-color: brown;
   
 }
 .serie h1{
   font-size:large;
+  margin-bottom: 0;
   
 }.serie img{
   width:100%; 
   height: auto;
+}
+.container-img{
+  position: relative;
+}
+.container-img a{
+  background-color: rgb(0, 62, 100);
+  position: absolute;
+  bottom: 16px; /* Distancia desde la parte inferior */
+  left: 0; /* Centra horizontalmente */
+  padding-left: 50%;
+  padding-top: 5PX;
+  padding-bottom: 5PX;
+  padding-right: 10PX;
+  color: white;
+  text-decoration: none;
+}
+/*lo mas visto*/
+.vistos{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 18, 82);
+  align-items: center;
+}
+.lista-vistos{
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.lista-vistos img{
+  width: 100px;
+  height: 100px;
+}
+.container-img p{
+  position: absolute;
+  color: red;
+  font-size: 50px;
+  left: 40%;
+  font-weight: bold;
+  top: -30px;
+}
+/*footer*/
+.foot{
+  display: flex;
+  background-color: black;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+}
+.redes{
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+.redes img{
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+}
+.direccion{
+  flex-grow: 1;
+}
+.copy{
+  padding-right: 5%;
 }
