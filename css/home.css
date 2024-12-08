@@ -62,12 +62,11 @@
 .peli-item{
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 100px;
+  flex-basis: 10%;
 }
 .peli-item img{
-  width: 100%; 
+  width:100%; 
   height: auto; 
-  display: block;
 }
 .peli-item h1{
   margin-top: 0;
@@ -96,6 +95,7 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(18, 18, 82);
+  color: white;
 }
 
 .lita-actores{
@@ -103,12 +103,8 @@
   list-style: none;
   gap: 50px;
   flex-wrap: wrap;
+  padding-left: 0;
 }
-.lita-actores p,h1{
-  color: white;
-}
-
-
 .lita-actores img{
   height: 100px;
   width: 100px;
@@ -118,4 +114,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/*sectio lateral*/
+.contain-side{
+  display: flex;
+  border: solid red;
+}
+.series{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  border: solid blue;
+}
+
+.festivales{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black;
+}
+/*festivales*/
+.lista-festi{
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  margin: 10px;
+}
+.lista-festi h1{
+  font-size: large;
+}
+.lista-festi img{
+  width: 250px;
+}
+/*series*/
+.lista-series{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  
+}
+
+.serie{
+  background-color: brown;
+  
+}
+.serie h1{
+  font-size:large;
+  
+}.serie img{
+  width:100%; 
+  height: auto;
 }
