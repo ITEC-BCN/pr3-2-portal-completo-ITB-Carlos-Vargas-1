@@ -5,9 +5,9 @@
   display: flex;
   margin: 0;
   flex-direction: column;
+  background-color:  rgb(8,15,40);
 }
 .Header{
- 
   position: sticky; 
   top: 0; 
   z-index: 100; 
@@ -165,8 +165,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
- 
-  
 }
 .serie{
   background-color: brown;
@@ -253,10 +251,79 @@
 .caja-info{
   display: flex;
   gap: 5%;
+  
 }
 .caja-info img{
   width: 25%;
   height: auto;
   border-radius: 10%;
+  margin-left: 5%;
+}
+.straming{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+  
+}
+.straming a{
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(3, 52, 143);
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 500px;
+  display: block;
+  font-size: 1.2rem
+}
+.caja-textos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.caja-textos h1{
+  font-size: 30px;
+}
+.caja-textos p{
+  font-size: 20px;
+}
+/*formulario de alta*/
+.alta{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(26, 33, 63);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
 
+.alta input, select, textarea, button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+.selecciones{
+  background-color: black;
+  color: white;
+}
+
+.alta button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.alta button:hover {
+  background-color: #2980b9;
+}
+/*lista-pelis*/
+.lista-grande{
+  flex-basis: 20%;
 }
